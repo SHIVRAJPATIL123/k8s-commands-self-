@@ -88,6 +88,30 @@ minikube start -p multinode-demo
 echo "you have been hacked" >> /dev/pts/6                       to send msg to another terminal 
 
 
+HELM ......................................................................................................................................................
+helm init: Initializes Helm on your cluster, installing Tiller (the server-side component of Helm) and setting up the necessary resources.
+
+helm repo add: Adds a Helm repository to your local Helm configuration. Helm repositories contain packaged charts that you can install on your cluster.
+
+helm search: Searches for available charts in the configured Helm repositories based on the specified keyword. It helps you find charts for the applications you want to deploy.
+
+helm install: Installs a chart onto your Kubernetes cluster. You need to specify the name of the release, the chart name, and optionally provide values or a values file to customize the chart's configuration.
+
+helm upgrade: Upgrades an existing release to a new version of the chart. You can use this command to update your deployed applications with new features or bug fixes.
+
+helm uninstall: Uninstalls a release, removing all associated resources from your Kubernetes cluster.
+
+helm list: Lists all the releases currently deployed on your cluster.
+helm repo list 
+helm status: Retrieves the status of a release, showing information about the deployed resources, version, and other details.
+
+helm get: Retrieves additional information about a release, such as the deployed configuration, values, or specific resources.
+
+helm package: Packages a directory or a chart into a compressed chart archive file (.tgz), which can be distributed and installed on a cluster.
+
+helm repo update: Updates the local cache of Helm repositories, ensuring you have the latest versions of charts available.
+
+helm rollback: Rolls back a release to a previous version, undoing a failed or unwanted upgrade.
 
 helm list
 helm delete my-release
